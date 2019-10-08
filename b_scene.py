@@ -45,6 +45,7 @@ def game_loop():
     # repeat forever, game loop
     while True:
         # get user input
+        keys = ugame.buttons.get_pressed()
 
         # update game logic
         if keys & ugame.K_SELECT != 0:  # Select button
